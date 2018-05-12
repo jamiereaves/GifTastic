@@ -1,5 +1,5 @@
 //variable to hold array of categories
-var emotions = ["happy", "sad", "bored", "angry", "confused", "silly", "giddy", "hungry", "anxious", "scared", "overwhelmed", "disoriented", "fabulous", "fantastic", "frisky", "terrified", "exhausted"];
+var emotions = ["happy", "sad", "bored", "angry", "confused", "silly", "giddy", "hungry", "anxious", "scared", "overwhelmed", "disoriented", "fabulous", "fantastic", "frisky", "terrified", "exhausted", "sleepy", "freaky", "optimistic", "energetic"];
 //variable to hold initial values of limit and currentEmotion
 var limit = 0;
 var currentEmotion = "";

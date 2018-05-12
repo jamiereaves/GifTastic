@@ -1,3 +1,6 @@
+/*center text. set background color/image and size/style image to display just to the left of the title.
+set max width to eliminate unnecessary negative space. set margin to space and center horizontally. round corners and set border
+style/color/etc... set background and font color. set padding to place textset font style and size.*/
 h1 {
     text-align: center;
     background: rgb(1, 1, 41);
@@ -16,31 +19,33 @@ h1 {
     font-family: "Bangers", cursive;
     font-size: 48px;
 }
-
+/*set background color for page*/
 body{
     background-color: #A5C7EE;
 }
-
+/*ensure text on buttons wraps appropriately if necessary. hide overflow. set margin to space. round corners and set border
+style/color/etc... set background and font color. eliminate outline. set font style and size.*/
 .topButton {
-  white-space: normal !important;
-  word-wrap: normal;
-  overflow: hidden; 
-  float:left;
-  margin: 5px 10px;
-  border-radius: 5px;
- border-width: 2px;
- border-color: rgb(1, 1, 41);
- background: rgb(3, 3, 194);
- color: #A5C7EE;
- outline: none;
- font-family: "Permanent Marker", cursive;
+white-space: normal !important;
+word-wrap: normal;
+overflow: hidden; 
+float:left;
+margin: 5px 10px;
+border-radius: 5px;
+border-width: 2px;
+border-color: rgb(1, 1, 41);
+background: rgb(3, 3, 194);
+color: #A5C7EE;
+outline: none;
+font-family: "Permanent Marker", cursive;
 font-size: 24px;
 }
-
+/*eliminate default outline*/
 .topButton:focus{
     outline:none;
 }
-
+/*set display/float/margin so elements position correctly within parent. set max width and min
+height so that child elements are constrained appropriately*/
 .resultContainer {
     display: block;
     max-width:500px;
@@ -49,50 +54,57 @@ font-size: 24px;
     float:left;
     margin: auto;
 }
-
+/*change text color when HOVER to clarify which image the rating belongs to*/
 .resultContainer:hover {
     color:white;
 
 }
-
+/*adjust padding to display content properly*/
 #gifParent {
     padding: 40px 0 0 140px;
 }
-
+/*gif container is as high as parent container. set margins to center*/
 .gifDisplay {
     height:100%;
     margin:auto;
 }
-
+/*set margin to center. set maximum width to 90% of parent container and height to 200px
+round corner and set shadow. set border width/style/color*/
 .resultGif {
     margin: auto;
     max-width:90%;
     height: 200px;
-
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px 0px rgb(57, 57, 68);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(3, 3, 194);
 }
-
+/*place text absolutely at the bottom of and center of it's parent*/
 .resultText {
     position: absolute;
     bottom: 0;
     right: 50%;
 }
-
+/*set margin to center horizontally.*/
 #formParent{
     margin: 0 auto;
 }
-
+/*set margins to center and eliminate default outline. set border radius/width/color. set background
+and font color. set font size/style*/
 #buttonAdd{
-    margin: 5px auto;
-  border-radius: 5px;
- border-width: 2px;
- border-color: rgb(1, 1, 41);
- background: rgb(3, 3, 194);
- color: #A5C7EE;
- outline: none;
- font-family: "Permanent Marker", cursive;
+margin: 5px auto;
+border-radius: 5px;
+border-width: 2px;
+border-color: rgb(1, 1, 41);
+background: rgb(3, 3, 194);
+color: #A5C7EE;
+outline: none;
+font-family: "Permanent Marker", cursive;
 font-size: 24px;
 }
-
+/*set margin to center horizontally. et background
+and font color. set font size/style*/
 #movie-form {
     font-family: "Permanent Marker", cursive;
     font-size: 24px;
@@ -100,12 +112,13 @@ font-size: 24px;
     color :rgb(3, 3, 194);
     margin: 10px auto;
 }
-
+/*set margin to center horizontally. set width to full parent container*/
 #userInput {
     margin: 5px auto;
     width:100%;
 }
-
+/*set margins to center and eliminate default outline. set border radius/width/color. set background
+and font color. set font size/style*/
 #moreGifs {
 margin: 5px auto;
 border-radius: 5px;
@@ -117,38 +130,39 @@ outline: none;
 font-family: "Permanent Marker", cursive;
 font-size: 24px;
 }
-
+/*set default border shadow*/
 #moreGifs,
 #buttonAdd,
 .topButton {
     box-shadow: 1px 1px 0px 0px rgb(33, 33, 48);
 }
-
+/*buttons when HOVER. increase shadow to "raise" button and
+create a click effect and eliminate outline. */
 #moreGifs:hover,
 #buttonAdd:hover,
 .topButton:hover {
     box-shadow: 3px 3px 2px 0px rgb(33, 33, 48);
     outline: none;
 }
-/*for contact/reset button when ACTIVE. restore default shadow to "lower" button and
-create a click effect*/
+/*buttons when ACTIVE. restore default shadow to "lower" button and
+create a click effect and eliminate outline*/
 #moreGifs:active,
 #buttonAdd:active,
 .topButton:active {
     box-shadow: 2px 2px 1px 0px rgb(33, 33, 48);
     outline: none;
 }
-
+/*set size for header image*/
 #borrowFeeling {
     width:80%;
     height: auto;
 
 }
 
-/*css for screen widths between 515px and 768px. adjusted container widths
-and font sizes to ensure the page displays correctly at med browser widths
-changed the width of collection box to create 3 rows of four elements*/
-@media only screen and (min-width:568px) and (max-width:768px) {
+/*css for screen widths between 577px and 768px. adjusted container widths
+and padding to ensure the page displays correctly at med browser widths
+removed background image on header to avoid crowding*/
+@media only screen and (min-width:577px) and (max-width:768px) {
     #gifParent {
         padding: 40px 0 0 80px;
     }
@@ -168,8 +182,8 @@ changed the width of collection box to create 3 rows of four elements*/
     }
 
 /*css for screen widths smaller than 514px. adjusted container widths
-and font sizes to ensure the page displays correctly at v small browser widths
-changed the width of collection box to create 3 rows of four elements*/
+and padding to ensure the page displays correctly at v small browser widths. changed display so that
+gifs display as an equally spaced column*/
 @media only screen and (max-width: 576px) {
     .resultGif{
         min-width:none;
