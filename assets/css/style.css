@@ -1,6 +1,10 @@
 h1 {
     text-align: center;
     background: rgb(1, 1, 41);
+    background-image: url(../images/main.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 10% 50%; 
     color: rgb(3, 3, 194);
     max-width: 700px;
     margin: 10px auto;
@@ -138,7 +142,7 @@ create a click effect*/
 #borrowFeeling {
     width:80%;
     height: auto;
-    
+
 }
 
 /*css for screen widths between 515px and 768px. adjusted container widths
@@ -157,6 +161,11 @@ changed the width of collection box to create 3 rows of four elements*/
         min-width: 65%;
     } 
 }
+
+@media only screen and (max-width: 722px) {
+    h1{
+        background-image: none;
+    }
 
 /*css for screen widths smaller than 514px. adjusted container widths
 and font sizes to ensure the page displays correctly at v small browser widths
