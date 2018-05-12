@@ -1,0 +1,179 @@
+h1 {
+    text-align: center;
+    background: rgb(1, 1, 41);
+    color: rgb(3, 3, 194);
+    max-width: 700px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: double;
+    border-color: rgb(3, 3, 194);
+    font-family: "Bangers", cursive;
+    font-size: 48px;
+}
+
+body{
+    background-color: #A5C7EE;
+}
+
+.topButton {
+  white-space: normal !important;
+  word-wrap: normal;
+  overflow: hidden; 
+  float:left;
+  margin: 5px 10px;
+  border-radius: 5px;
+ border-width: 2px;
+ border-color: rgb(1, 1, 41);
+ background: rgb(3, 3, 194);
+ color: #A5C7EE;
+ outline: none;
+ font-family: "Permanent Marker", cursive;
+font-size: 24px;
+}
+
+.topButton:focus{
+    outline:none;
+}
+
+.resultContainer {
+    display: block;
+    max-width:500px;
+    min-height: 250px;
+    position: relative;
+    float:left;
+    margin: auto;
+}
+
+.resultContainer:hover {
+    color:white;
+
+}
+
+#gifParent {
+    padding: 40px 0 0 140px;
+}
+
+.gifDisplay {
+    height:100%;
+    margin:auto;
+}
+
+.resultGif {
+    margin: auto;
+    max-width:90%;
+    height: 200px;
+
+}
+
+.resultText {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+#formParent{
+    margin: 0 auto;
+}
+
+#buttonAdd{
+    margin: 5px auto;
+  border-radius: 5px;
+ border-width: 2px;
+ border-color: rgb(1, 1, 41);
+ background: rgb(3, 3, 194);
+ color: #A5C7EE;
+ outline: none;
+ font-family: "Permanent Marker", cursive;
+font-size: 24px;
+}
+
+#movie-form {
+    font-family: "Permanent Marker", cursive;
+    font-size: 24px;
+    text-align: center;
+    color :rgb(3, 3, 194);
+    margin: 10px auto;
+}
+
+#userInput {
+    margin: 5px auto;
+    width:100%;
+}
+
+#moreGifs {
+margin: 5px auto;
+border-radius: 5px;
+border-width: 2px;
+border-color: rgb(1, 1, 41);
+background: rgb(3, 3, 194);
+color: #A5C7EE;
+outline: none;
+font-family: "Permanent Marker", cursive;
+font-size: 24px;
+}
+
+#moreGifs,
+#buttonAdd,
+.topButton {
+    box-shadow: 1px 1px 0px 0px rgb(33, 33, 48);
+}
+
+#moreGifs:hover,
+#buttonAdd:hover,
+.topButton:hover {
+    box-shadow: 3px 3px 2px 0px rgb(33, 33, 48);
+    outline: none;
+}
+/*for contact/reset button when ACTIVE. restore default shadow to "lower" button and
+create a click effect*/
+#moreGifs:active,
+#buttonAdd:active,
+.topButton:active {
+    box-shadow: 2px 2px 1px 0px rgb(33, 33, 48);
+    outline: none;
+}
+
+#borrowFeeling {
+    width:80%;
+    height: auto;
+    
+}
+
+/*css for screen widths between 515px and 768px. adjusted container widths
+and font sizes to ensure the page displays correctly at med browser widths
+changed the width of collection box to create 3 rows of four elements*/
+@media only screen and (min-width:568px) and (max-width:768px) {
+    #gifParent {
+        padding: 40px 0 0 80px;
+    }
+
+    .resultContainer {
+        width:100%;
+    }
+
+    .resultGif {
+        min-width: 65%;
+    } 
+}
+
+/*css for screen widths smaller than 514px. adjusted container widths
+and font sizes to ensure the page displays correctly at v small browser widths
+changed the width of collection box to create 3 rows of four elements*/
+@media only screen and (max-width: 576px) {
+    .resultGif{
+        min-width:none;
+    }
+    
+    #gifDisplay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #gifParent {
+        padding: 40px 0 0 0;
+    }
+}

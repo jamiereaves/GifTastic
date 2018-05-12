@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--set the viewport so the page displays across devices correctly-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--links to reset css, fonts, bootstrap css, and custom css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Bangers|Dokdo|Monoton|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--link to jquery via cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--link to javascript file-->
+    <script src="assets/app.js"></script>
+    <!--page title-->
+    <title>Homework #6</title>
+</head>
+
+<body>
+<!--main container that takes up the entire width of the window-->
+<div class="container-fluid">
+    <!--row and column to hold the title-->
+    <div class="row">
+        <div class="col-sm">
+            <h1>can I borrow a feeling?</h1>
+        </div>
+    </div>  
+    <!--row and column to hold the buttons-->
+    <div class="row">
+        <div class="col-sm">
+            <div id="buttonHolder"></div>
+        </div>
+    </div>  
+    <!--row containing gifs and search form-->
+    <div class="row">
+        <!--responsive column containing gifs-->
+        <div class="col-sm-7 col-md-8 col-lg-9 col-xl-10" id="gifParent">
+            <!--holder for gifs-->
+            <div id="gifDisplay"></div>
+        </div>
+        <!--responsive column containing search form and button for adding more gifs-->
+        <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2" id="formParent">
+            <form id="movie-form">
+            <label for="userInput" style="margin-bottom: 0px">add an emotion:</label>
+            <input type="text" id="userInput">
+            <br>
+            <!--button for adding to emotion array and button for adding more gifs-->
+            <input id="buttonAdd" type="submit" value="lend a feeling!">
+            <button id="moreGifs">
+            </form>
+            <!--flair image-->
+            <img id="borrowFeeling" src="assets/images/main.png" alt="can i borrow a feeling">
+        </div>
+    </div>
+
+</div>
+</div>
+</body>
+
+</html>
